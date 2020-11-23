@@ -1,0 +1,164 @@
+body {
+    background-color: black;
+    max-width: 100%;
+}
+.navbar{
+  background-color:#F2F2F2;
+}
+.navbar-brand>img{
+  height: 35px;
+  width: 100px;
+}
+.form-inline>input:focus{
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.form-inline>input{
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+}
+.form-inline>input:hover{
+  background-color:  #D1E8E2;
+}
+.navbar-nav>button{
+  background-color: #F2F2F2;
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  width: 150px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+  cursor: pointer;
+}
+.navbar-nav>button:hover{
+  background-color: black;
+  color: #F2F2F2;
+  text-decoration: none;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.navbar-nav>button:focus{
+  text-decoration: none;
+}
+.nav-item>a{
+  color: #1F2833;
+  padding-right: 50px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+}
+.nav-item>a:hover{
+  color: #D1E8E2;
+}
+.login-container{
+  height: 450px;
+  max-width: 25%;
+  background-color: #F2F2F2;
+  margin-top: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media screen and (max-width: 600px) {
+  .login-container{
+    max-width: 100%;
+  }
+}
+.form-group p{
+  color: black;
+}
+     .login-form{
+       margin: auto;
+       width: 370px;
+       padding: 10px;
+       max-width: 100%;
+       
+     }
+     .login-form .form-control{
+       font-size: 15px;
+       min-height: 48px;
+       font-weight: 500;
+     }
+     .login-form a{
+       text-decoration: none;
+       color:#666;
+     }
+     .login-container p{
+      text-align: left;
+      font-size: 25px;
+      font-family: 'Alegreya Sans', sans-serif;
+      color:black;
+    }
+    .login-container input{
+      border: 1px solid black;
+    }
+
+     .btn-custom{
+       background-color: #F2F2F2;
+       color: black;
+       border: 1px solid black;
+       font-size: 15px;
+       font-weight: 600;
+       min-height: 48px;
+       cursor: pointer;
+     }
+     .btn-custom:hover{
+       background-color: black;
+       color: #F2F2F2;
+     }
+
+  .new-account{
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Alegreya Sans', sans-serif; 
+  }
+
+  .login-container h4{
+    color: white;
+  }
+  
+  #main-content h2{
+    font-size: 60px;
+    font-family: 'Alegreya Sans', sans-serif; 
+    text-align: center;
+    padding-top: 300px;
+    color: white;
+  }
+  #main-content h3{
+    font-family: 'Alegreya Sans', sans-serif; 
+    text-align: center;
+    color: white;
+  }
+
+  .form-check-label{
+      color: white;
+      font-family: 'Alegreya Sans', sans-serif; 
+  }
+  .form-check{
+      text-align: left;
+  }
+       .page-footer{
+      background-color: black;
+      height: 155px;
+     }
+     .page-footer p{
+      text-align: center;
+      margin-top: 45px;
+      font-size: 45px;
+     }
+     #main-content{
+      background-color: white;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      background-size: cover;
+      min-height: 1000px;
+    }

@@ -1,0 +1,116 @@
+button:focus{outline:0;}
+input:focus{outline:0;}
+body {
+    background-color: white;
+    max-width: 100%;
+}
+.navbar{
+  background-color:#F2F2F2;
+}
+.navbar-brand>img{
+  height: 35px;
+  width: 100px;
+}
+.form-inline>input:focus{
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.form-inline>input{
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+  display: none;
+}
+.form-inline>input:hover{
+  background-color:  #D1E8E2;
+}
+.navbar-nav>button{
+  background-color: #F2F2F2;
+  text-decoration: none;
+  border:solid 1px black;
+  color:black;
+  width: 150px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+}
+.navbar-nav>button:hover{
+  background-color: black;
+  color: #F2F2F2;
+  text-decoration: none;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.navbar-nav>button:focus{
+  text-decoration: none;
+}
+.nav-item>a{
+  color: #1F2833;
+  padding-right: 50px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+}
+.nav-item>a:hover{
+  color: #D1E8E2;
+}
+.card{
+  margin-top: 85px;
+  font-family: 'Alegreya Sans', sans-serif;
+  text-align: center;
+  background-color: #F2F2F2;
+  font-size: 18px;
+  border: 1px solid black;
+}
+.card img{
+  height: 75%;
+  width: 100%;
+}
+#welcome-content1{
+  max-width: 100%;
+  min-height: 400px;
+  text-align: center;
+}
+.text-area1{
+  margin-top: 50px;
+  padding: 25px;
+}
+#welcome-content1 p{
+  color: black;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size:calc(10px + 1.5vw);
+  padding-top: 100px;
+  padding: 50px;
+}
+#welcome-content1 h1{
+  color: black;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size:calc(18px + 1.2vw);
+}
+#welcome-content1 h5{
+  font-size:calc(8px + 1.2vw);
+  font-family: 'Alegreya Sans', sans-serif;
+}
+#main-content{
+  background-color:white;
+  max-width: 100%;
+  min-height: 1200px;
+  background-repeat: no-repeat;
+}
+#main-content a{
+  text-decoration: none;
+  color: black;
+}
+.main-content-bg{
+  background-color: #F2F2F2;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+}

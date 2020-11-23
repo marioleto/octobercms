@@ -1,0 +1,75 @@
+title = "Sign up"
+url = "/sign-up"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "guest"
+redirect = "homepage"
+
+[account]
+redirect = "homepage"
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+==
+{% component 'session' %}
+{% if canRegister %}
+    <div class="row" style="max-width: 100%;">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+    <div class="login-page" style="margin-top: 15%;">
+    <div class="form">
+    <h3 style="margin-bottom: 20px;">Vytvorenie účtu</h3>
+
+    {{ form_ajax('onRegister') }}
+
+        <div class="form-group">
+            <input
+                name="name"
+                type="text"
+                class="form-control"
+                id="registerName"
+                placeholder="Meno" />
+        </div>
+
+        <div class="form-group">
+            <input
+                name="email"
+                type="email"
+                class="form-control"
+                id="registerEmail"
+                placeholder="Email" />
+        </div>
+
+        {% if loginAttribute == "username" %}
+            <div class="form-group">
+                <input
+                    name="username"
+                    type="text"
+                    class="form-control"
+                    id="registerUsername"
+                    placeholder="Username" />
+            </div>
+        {% endif %}
+
+        <div class="form-group">
+            <input
+                name="password"
+                type="password"
+                class="form-control"
+                id="registerPassword"
+                placeholder="Heslo" />
+        </div>
+
+        <button type="submit" class="btn btn-success custom-button">Vytvoriť účet</button>
+
+    {{ form_close() }}
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4"></div>
+        </div>
+{% else %}
+    <!-- Registration is disabled. -->
+{% endif %}

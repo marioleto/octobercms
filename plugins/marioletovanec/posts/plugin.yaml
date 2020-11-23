@@ -1,0 +1,11 @@
+plugin:
+    name: 'marioletovanec.posts::lang.plugin.name'
+    description: 'marioletovanec.posts::lang.plugin.description'
+    author: 'Mario Letovanec'
+    icon: oc-icon-instagram
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Posts
+        url: marioletovanec/posts/posts
+        icon: icon-instagram

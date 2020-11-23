@@ -1,0 +1,29 @@
+<table style="text-align: left;font-family: 'Poppins', sans-serif;width: 100%;">
+    <tr>
+    {% if not topics|length %}
+    <h1></h1>
+    {% else %}
+      <td colspan="2"><h1 class="otazky1">Otázky</h1></td>
+    {% endif %}
+    </tr>
+    {% for topic in topics %}
+        <tr class="">
+            <td class="">
+                <div class="topic-indicator {{ topic.hasNew ? 'has-new' }}"></div>
+            </td>
+            <td>
+                <h5 style="margin-top: 20px;background-color:black;padding: 15px;border-radius: 5px; width: 78%;border: 1px solid white;">
+                    {% if topic.is_sticky %}<strong style="color: springgreen;">[Sticky]</strong>{% endif %}
+                    {% if topic.is_locked %}<i class="icon icon-lock"></i> <strong style="color: red;">[Locked]</strong>{% endif %}
+                    <a href="{{ topic.url }}" style="text-decoration: none;color:white;">{{ topic.subject }}</a>
+                    <br/><small><a style="color:#CDA34F;font-size: 18px;">Pýta sa ➜</a> <a style="font-weight: bold;color: white; font-size: 18px;">{{ topic.start_member.username }}</a></small>
+                </h5>
+            </td>
+        </tr>
+    {% endfor %}
+    {% if not topics|length %}
+        <tr>
+            <h1 style="line-height: 50px; text-align: center; margin-top: 50px;">Na túto tému sa nenašli žiadne otázky.</h1>
+        </tr>
+    {% endif %}
+</table>

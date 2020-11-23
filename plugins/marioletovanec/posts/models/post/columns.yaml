@@ -1,0 +1,16 @@
+columns:
+    username:
+        label: Username
+        type: text
+        searchable: true
+        sortable: true
+    title:
+        label: Title
+        type: text
+        sortable: true
+    description:
+        label: Description
+        type: text
+    date:
+        label: Date
+        type: date

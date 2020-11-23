@@ -1,0 +1,11 @@
+plugin:
+    name: 'marioletovanec.notes::lang.plugin.name'
+    description: 'marioletovanec.notes::lang.plugin.description'
+    author: 'Mario Letovanec'
+    icon: oc-icon-bell
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Notes
+        url: marioletovanec/notes/notes
+        icon: icon-calendar

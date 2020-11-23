@@ -1,0 +1,4 @@
+title: Posts
+modelClass: MarioLetovanec\Posts\Models\Post
+toolbar:
+    buttons: reorder_toolbar

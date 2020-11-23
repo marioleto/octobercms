@@ -1,0 +1,79 @@
+button:focus{outline:0;}
+input:focus{outline:0;}
+
+body {
+    background-color: white;
+    max-width: 100%;
+}
+.navbar{
+  background-color:#F2F2F2;
+}
+.navbar-brand>img{
+  height: 35px;
+  width: 100px;
+}
+.form-inline>input:focus{
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.form-inline>input{
+  border: 1px solid black;
+  width: 50px;
+  background-color: #F2F2F2;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
+}
+.form-inline>input:hover{
+  background-color:  black;
+  color: white;
+}
+.navbar-nav>button{
+  background-color: #F2F2F2;
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  width: 150px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+}
+.navbar-nav>button:hover{
+  background-color: black;
+  color: #F2F2F2;
+  text-decoration: none;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.navbar-nav>button:focus{
+  text-decoration: none;
+}
+.nav-item>a{
+  color: #1F2833;
+  padding-right: 50px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+}
+.nav-item>a:hover{
+  color: #D1E8E2;
+}
+#question-content {
+  max-width: 100%;
+  min-height: 1000px;
+  text-align: center;
+}
+.otazky1 {
+  display: flex;
+  margin-left: 35%;
+  justify-content: center;
+  width: 90px;
+  color: black;
+  text-align:center;
+  font-size: 20px;
+  font-weight: bold;
+}

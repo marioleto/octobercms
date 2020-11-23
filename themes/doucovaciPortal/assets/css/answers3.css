@@ -1,0 +1,130 @@
+body {
+    background-color: white;
+    max-width: 100%;
+}
+
+button:focus{outline:0;}
+input:focus{outline:0;}
+
+.navbar{
+  background-color:#F2F2F2;
+}
+.navbar-brand>img{
+  height: 35px;
+  width: 100px;
+}
+.form-inline>input:focus{
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: white;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.form-inline>input{
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+}
+.form-inline>input:hover{
+  background-color:  #D1E8E2;
+}
+.navbar-nav>button{
+  background-color: #F2F2F2;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  width: 150px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+  height: 40px;
+}
+.navbar-nav>button:hover{
+  background-color: black;
+  color: #F2F2F2;
+  text-decoration: none;
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.navbar-nav>button:focus{
+  text-decoration: none;
+}
+.nav-item>a{
+  color: #1F2833;
+  padding-right: 50px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 18px;
+}
+.nav-item>a:hover{
+  color: #D1E8E2;
+}
+
+.answers-content {
+ background-color: black;
+ padding: 50px;
+ border-radius: 5px;
+ border: 1px solid white;
+ margin-top: 10px;
+ font-family: 'Alegreya Sans', sans-serif;
+ word-break: break-all;
+}
+
+.replies {
+  color: black;
+  background-color: lightgray;
+  padding: 15px;
+  font-size: 20px;
+  word-wrap: break-word;
+  line-height: 95%;
+}
+
+.my-actions{
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+}
+
+.my-author {
+  font-size: 16px; 
+  margin-left: 2px; 
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+.mycontrolpanel {
+   background-color: black;
+   border-left: 1px solid white;
+   border-right: 1px solid white;
+   color: white; 
+   text-decoration: none;
+   font-size: 18px;
+}
+
+a:hover {
+  color: grey;
+}
+
+.movebtn {
+  text-decoration: none;
+    color: black;
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 18px;
+    height: 40px;
+    width: 100px; 
+    background-color: #FDC65F;
+    margin-top: 10px;
+}
+
+.movebtn:hover{
+  background-color: #D1E8E2;
+  color: #1F2833;
+}

@@ -1,0 +1,56 @@
+title = "Log in"
+url = "/login"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "guest"
+redirect = "homepage"
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+==
+{% component 'session' %}
+    <div class="row" style="max-width: 100%;">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <div class="login-page" style="margin-top: 15%;">
+                <div class="form">
+                    <h3 style="margin-bottom: 20px;">Log in to your account</h3>
+            {{ form_ajax('onSignin') }}
+
+        <div class="form-group">
+        <input
+            name="login"
+            type="text"
+            class="form-control"
+            id="userSigninLogin"
+            placeholder="Email" />
+        </div>
+
+        <div class="form-group">
+        <input
+            name="password"
+            type="password"
+            class="form-control"
+            id="userSigninPassword"
+            placeholder="Password" />
+        </div>
+
+        {% if rememberLoginMode == 'ask' %}
+
+        {% endif %}
+
+        <button type="submit" class="btn btn-success custom-button">Log in</button>
+        <div class="new-acc">
+            <p>Don't have an account yet?<a href="{{ 'sign'|page }}" > Sign up</a> </p>
+        </div>
+
+        {{ form_close() }}
+        </div>
+        </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>

@@ -1,0 +1,23 @@
+<div class="reply-form" id="postForm">
+
+    {{ form_open({ request: 'onPost' }) }}
+
+        <input type="hidden" name="topic" value="{{ topic.id }}" />
+
+       
+
+        <div class="post-area">
+            <textarea
+                placeholder="Pridaj odpoveď"
+                id="topicContent"
+                name="content"
+                rows="6"
+                class="form-control">{{ form_value('content') }}</textarea>
+            <div class="post-buttons">
+                <button type="submit" style="background-color: #FDC65F; border: none; color:black; margin-top: 10px;" class="btn btn-primary btn-lg">Pridať odpoveď</button>
+            </div>
+        </div>
+
+    {{ form_close() }}
+
+</div>

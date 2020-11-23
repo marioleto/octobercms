@@ -1,0 +1,96 @@
+<div class="content" style="margin-bottom: 35px;">
+    <div class="row"> 
+        <a class="my-author" style="color:#CDA34F;  margin-left: 15px;">{{ post.member.username }} </a>
+        <a style="color: white; margin-left: 2px;"> 
+            <div class="date">
+            <i style="text-decoration: none; color: darkgrey; font-size: 13px;">
+                &#8226; {% partial __SELF__ ~ "::timestamp" date=post.created_at %}
+            </i>
+            
+            {% if post.created_at != post.updated_at %}
+                <i><small class="text text-muted" style="margin-left: 5px;" >
+                    &#8226; ( Last updated {% partial __SELF__ ~ "::timestamp" date=post.updated_at %})
+                </small></i>
+            {% endif %}
+        </div>
+        </a>
+    </div>
+    {% if mode == 'edit' %}
+        {{ form_open() }}
+            <!-- Passable fields -->
+            <input type="hidden" name="mode" value="save" />
+            <input type="hidden" name="post" value="{{ post.id }}" />
+            {% if topic.first_post.id == post.id %}
+                <input type="text" name="subject" class="form-control" value="{{ topic.subject }}" />
+            {% endif %}
+            <div class="text">
+                <textarea
+                    rows="5"
+                    name="content"
+                    class="form-control"
+                    >{{ post.content }}</textarea>
+            </div>
+            <div class="actions">
+                <a
+                    href="javascript:;"
+                    data-request="{{ __SELF__ }}::onUpdate"
+                    data-request-data="post: {{ post.id }}"
+                    style="text-decoration: none;"
+                    data-request-update="'{{ __SELF__ }}::post': '#post-{{ post.id }}'"
+                    class="save">
+                    Save
+                </a>
+                <a
+                    href="javascript:;"
+                    data-request="{{ __SELF__ }}::onUpdate"
+                    data-request-data="post: {{ post.id }}, mode: 'delete'"
+                    style="text-decoration: none;"
+                    data-request-update="'{{ __SELF__ }}::post': '#post-{{ post.id }}'"
+                    data-request-confirm="Are you sure?"
+                    class="delete">
+                    Delete
+                </a>
+                <a href="javascript:;"
+                    data-request="{{ __SELF__ }}::onUpdate"
+                    data-request-data="post: {{ post.id }}, mode: 'view'"
+                    style="text-decoration: none;"
+                    data-request-update="'{{ __SELF__ }}::post': '#post-{{ post.id }}'"
+                    class="cancel">
+                    Cancel
+                </a>
+            </div>
+        {{ form_close() }}
+    {% elseif mode == 'delete' %}
+        <div class="text">
+            <p style="color: white;"><em>Vymazané</em></p>
+        </div>
+    {% else %}
+        <div class="text">
+            <div class="replies">
+                 <a>{{ post.content_html|raw }}</a>
+            </div>
+        <div class="row">
+        <div class="my-actions">
+            {% if topic.canPost %}
+                <a style="text-decoration: none; margin-left: 15px;" href="javascript:;"
+                    class="quote"
+                    data-request-data="post: {{ post.id }}"
+                    data-quote-button>
+                    Quote
+                </a>
+            {% endif %}
+            {% if topic.canPost and post.canEdit and mode != 'edit' and mode != 'delete' %}
+                <a style="text-decoration: none;" href="javascript:;"
+                    class="edit"
+                    data-request="onUpdate"
+                    data-request-data="post: {{ post.id }}"
+                    data-request-update="'{{ __SELF__ ~ '::post' }}': '#post-{{ post.id }}'">
+                    Edit
+                </a>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+<div class="post-divider"></div>

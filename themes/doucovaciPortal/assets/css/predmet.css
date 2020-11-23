@@ -1,0 +1,129 @@
+button:focus{outline:0;}
+input:focus{outline:0;}
+body {
+    background-color: black;
+    max-width: 100%;
+}
+.navbar{
+  background-color:#FDC65F;
+}
+.navbar-brand>img{
+  height: 35px;
+  width: 100px;
+}
+.form-inline>input:focus{
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+.form-inline>input{
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  height: 40px;
+}
+.form-inline>input:hover{
+  background-color:  #D1E8E2;
+}
+.navbar-nav>button{
+  background-color: black;
+  text-decoration: none;
+  border: none;
+  color: white;
+  width: 150px;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  height: 40px;
+  cursor: pointer;
+}
+.navbar-nav>button:hover{
+  background-color: #D1E8E2;
+  color: #1F2833;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.navbar-nav>button:focus{
+  text-decoration: none;
+}
+.nav-item>a{
+  color: #1F2833;
+  padding-right: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+.nav-item>a:hover{
+  color: #D1E8E2;
+}
+#select-category{
+    max-width: 100%;
+    min-height: 150px;
+    background-color: #1F2833;
+    border-bottom: 1.5px solid #FDC65F;
+}
+#select-category select{
+    margin-top: 55px;
+    min-width: 120px;
+    max-width: 200px;
+    height: 45px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FDC65F;
+    color: black;
+    cursor: pointer;
+    
+}
+#select-category select:hover{
+    background-color: #D1E8E2;
+    color: #1F2833;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.float-left{
+    margin-top: 65px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+#select-category a{
+    color: #FDC65F;
+}
+#select-category a:hover{
+    text-decoration: none;
+    color:  #D1E8E2;
+}
+
+.card{
+  margin-top: 110px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+.card img{
+  height: 75%;
+  width: 75%;
+}
+#main-content a{
+  text-decoration: none;
+  color: black;
+}
+#main-content{
+    background-color: #1F2833;
+    max-width: 100%;
+    min-height: 900px;
+}
+.page-footer{
+  background-color: #FDC65F;
+  height: 155px;
+}
+.page-footer p{
+  text-align: center;
+  margin-top: 45px;
+  font-size: 45px;
+}

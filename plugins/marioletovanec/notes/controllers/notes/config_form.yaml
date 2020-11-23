@@ -1,0 +1,10 @@
+name: Notes
+form: $/marioletovanec/notes/models/note/fields.yaml
+modelClass: MarioLetovanec\Notes\Models\Note
+defaultRedirect: marioletovanec/notes/notes
+create:
+    redirect: 'marioletovanec/notes/notes/update/:id'
+    redirectClose: marioletovanec/notes/notes
+update:
+    redirect: marioletovanec/notes/notes
+    redirectClose: marioletovanec/notes/notes

@@ -1,0 +1,10 @@
+name: Posts
+form: $/marioletovanec/posts/models/post/fields.yaml
+modelClass: MarioLetovanec\Posts\Models\Post
+defaultRedirect: marioletovanec/posts/posts
+create:
+    redirect: 'marioletovanec/posts/posts/update/:id'
+    redirectClose: marioletovanec/posts/posts
+update:
+    redirect: marioletovanec/posts/posts
+    redirectClose: marioletovanec/posts/posts

@@ -1,0 +1,27 @@
+{{ form_open({ request: 'onCreate' }) }}
+    <div class="form-group" style="padding-left: 20px;padding-bottom: 20px;">
+        <label for="topicSubject" class="control-label" style="font-family: 'Poppins', sans-serif; font-size: 25px; color: white; ">Otázka</label>
+        <input style="width: 50%; background-color: white; color: black;border-bottom: 3px solid black;border-top: none;border-left: none;border-right: none;font-family: 'Alegreya Sans', sans-serif;" placeholder="Sem napíšte skrátenú otázku"
+            id="topicSubject"
+            name="subject"
+            type="text"
+            class="form-control"
+            value="{{ post('subject') }}" />
+    </div>
+    <div class="form-group" style="padding-left: 20px; padding-bottom: 20px;">
+        <label for="topicContent" class="control-label" style="font-family: 'Poppins', sans-serif; font-size: 25px; color: white; ">Popis otázky</label>
+        <textarea placeholder="Sem napíšte podrobne otázku" style="width: 78%;border: none; background-color: white; color: black;border: 3px solid black;font-family: 'Alegreya Sans', sans-serif;"
+            id="topicContent"
+            name="content"
+            rows="8"
+            type="text"
+            class="form-control">{{ post('content') }}</textarea>
+    </div>
+    <div class="form-group post-buttons" style="padding-left: 20px; padding-bottom: 20px;">
+        <button type="submit" class="btn btn-primary btn-lg" style="background-color: black; border: none;font-family: 'Alegreya Sans', sans-serif; height: 50px;">Odoslať otázku</button>
+        {% if returnUrl %}
+            <a class="btn btn-link btn-lg" href="{{ returnUrl }}" style="text-decoration: none; color:white;background-color: black; height: 50px; font-family: 'Alegreya Sans', sans-serif;">Zrušiť</a>
+        {% endif %}
+    </div>
+    <input type="hidden" name="channel" value="{{ channel.id }}" />
+{{ form_close() }}
