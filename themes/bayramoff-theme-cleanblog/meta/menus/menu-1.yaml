@@ -1,0 +1,9 @@
+name: 'Menu 1'
+items:
+    -
+        title: 'New menu item'
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: page-1
+        replace: '0'
