@@ -12,6 +12,7 @@ return array(
     'Error' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/Error.php',
     'JSMin' => $vendorDir . '/linkorb/jsmin-php/src/jsmin-1.1.1.php',
     'JSMinException' => $vendorDir . '/linkorb/jsmin-php/src/jsmin-1.1.1.php',
+    'Normalizer' => $vendorDir . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
     'ParseError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ParseError.php',
     'SessionUpdateTimestampHandlerInterface' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
     'TypeError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',

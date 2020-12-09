@@ -30,11 +30,26 @@ class File extends Model
     public $morphTo = [
         'attachment' => []
     ];
+    
+    /**
+     * @var array The attributes that are mass assignable.
+     */
+    protected $fillable = [
+        'file_name',
+        'title',
+        'description',
+        'field',
+        'attachment_id',
+        'attachment_type',
+        'is_public',
+        'sort_order',
+        'data',
+    ];
 
     /**
      * @var array The attributes that aren't mass assignable.
      */
-    protected $guarded = ['disk_name'];
+    protected $guarded = [];
 
     /**
      * @var array Known image extensions.
@@ -161,7 +176,22 @@ class File extends Model
         }
 
         if (empty($filename)) {
-            $filename = FileHelper::basename($url);
+            // Parse the URL to get the path info
+            $filePath = parse_url($data->url, PHP_URL_PATH);
+
+            // Get the filename from the path
+            $filename = pathinfo($filePath)['filename'];
+
+            // Attempt to detect the extension from the reported Content-Type, fall back to the original path extension if not able to guess
+            $mimesToExt = array_flip($this->autoMimeTypes);
+            if (!empty($data->headers['Content-Type']) && isset($mimesToExt[$data->headers['Content-Type']])) {
+                $ext = $mimesToExt[$data->headers['Content-Type']];
+            } else {
+                $ext = pathinfo($filePath)['extension'];
+            }
+
+            // Generate the filename
+            $filename = "{$filename}.{$ext}";
         }
 
         return $this->fromData($data, $filename);
@@ -701,6 +731,12 @@ class File extends Model
         }
 
         $ext = strtolower($this->getExtension());
+
+        // If file was uploaded without extension, attempt to guess it
+        if (!$ext && $this->data instanceof UploadedFile) {
+            $ext = $this->data->guessExtension();
+        }
+
         $name = str_replace('.', '', uniqid(null, true));
 
         return $this->disk_name = !empty($ext) ? $name.'.'.$ext : $name;

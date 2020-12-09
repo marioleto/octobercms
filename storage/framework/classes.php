@@ -218,4 +218,7 @@
   'marioletovanec\\posts\\Plugin' => 'plugins\\marioletovanec\\posts\\Plugin.php',
   'marioletovanec\\posts\\Controllers\\posts' => 'plugins\\marioletovanec\\posts\\controllers\\posts.php',
   'MarioLetovanec\\Posts\\Models\\Post' => 'plugins\\marioletovanec\\posts\\models\\Post.php',
+  'marioletovanec\\todo\\Plugin' => 'plugins\\marioletovanec\\todo\\Plugin.php',
+  'marioletovanec\\todo\\Controllers\\todo' => 'plugins\\marioletovanec\\todo\\controllers\\todo.php',
+  'MarioLetovanec\\Todo\\Models\\Todo' => 'plugins\\marioletovanec\\todo\\models\\Todo.php',
 );

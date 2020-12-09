@@ -1,4 +1,4 @@
-1606166735a:1:{s:7:"log.htm";a:11:{s:8:"fileName";s:7:"log.htm";s:7:"content";s:1445:"title = "Log in"
+1607522984a:1:{s:7:"log.htm";a:11:{s:8:"fileName";s:7:"log.htm";s:7:"content";s:1446:"title = "Log in"
 url = "/login"
 layout = "default"
 is_hidden = 0
@@ -18,7 +18,7 @@ requirePassword = 0
         <div class="col-md-4">
             <div class="login-page" style="margin-top: 15%;">
                 <div class="form">
-                    <h3 style="margin-bottom: 20px;">Log in to your account</h3>
+                    <h3 style="margin-bottom: 20px;">Log in to your account!</h3>
             {{ form_ajax('onSignin') }}
 
         <div class="form-group">
@@ -53,13 +53,13 @@ requirePassword = 0
         </div>
         </div>
         <div class="col-md-4"></div>
-    </div>";s:5:"mtime";i:1606081034;s:6:"markup";s:1245:"{% component 'session' %}
+    </div>";s:5:"mtime";i:1606167135;s:6:"markup";s:1246:"{% component 'session' %}
     <div class="row" style="max-width: 100%;">
         <div class="col-md-4"></div>
         <div class="col-md-4">
             <div class="login-page" style="margin-top: 15%;">
                 <div class="form">
-                    <h3 style="margin-bottom: 20px;">Log in to your account</h3>
+                    <h3 style="margin-bottom: 20px;">Log in to your account!</h3>
             {{ form_ajax('onSignin') }}
 
         <div class="form-group">

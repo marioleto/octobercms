@@ -1,5 +1,0 @@
-fields:
-    text:
-        label: Text
-        span: full
-        type: text

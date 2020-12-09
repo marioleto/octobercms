@@ -1,0 +1,11 @@
+plugin:
+    name: 'marioletovanec.todo::lang.plugin.name'
+    description: 'marioletovanec.todo::lang.plugin.description'
+    author: 'Mario Letovanec'
+    icon: oc-icon-align-justify
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: TodoList
+        url: marioletovanec/todo/todo
+        icon: icon-align-left

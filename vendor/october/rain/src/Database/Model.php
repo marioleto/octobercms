@@ -1,7 +1,5 @@
 <?php namespace October\Rain\Database;
 
-use Db;
-use Input;
 use Closure;
 use October\Rain\Support\Arr;
 use October\Rain\Support\Str;
@@ -21,6 +19,7 @@ use Exception;
  */
 class Model extends EloquentModel
 {
+    use Concerns\GuardsAttributes;
     use Concerns\HasRelationships;
     use \October\Rain\Support\Traits\Emitter;
     use \October\Rain\Extension\ExtendableTrait;
@@ -989,7 +988,7 @@ class Model extends EloquentModel
     {
         /**
          * @event model.beforeGetAttribute
-         * Called before the model attribute is retrieved
+         * Called before the model attribute is retrieved (only when the attribute exists in `$model->attributes` or has a get mutator method defined; i.e. `getFooAttribute()`)
          * > **Note:** also triggered in October\Rain\Halcyon\Model
          *
          * Example usage:
@@ -1020,7 +1019,7 @@ class Model extends EloquentModel
 
         /**
          * @event model.getAttribute
-         * Called after the model attribute is retrieved
+         * Called after the model attribute is retrieved (only when the attribute exists in `$model->attributes` or has a get mutator method defined; i.e. `getFooAttribute()`)
          * > **Note:** also triggered in October\Rain\Halcyon\Model
          *
          * Example usage:
