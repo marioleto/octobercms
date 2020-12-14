@@ -238,4 +238,7 @@
   'Vdlp\\Redirect\\Classes\\StatisticsHelper' => 'plugins\\vdlp\\redirect\\classes\\StatisticsHelper.php',
   'Vdlp\\Redirect\\Models\\Client' => 'plugins\\vdlp\\redirect\\models\\Client.php',
   'vdlp\\redirect\\Controllers\\testlab' => 'plugins\\vdlp\\redirect\\controllers\\testlab.php',
+  'MarioLetovanec\\Posts\\Components\\PostForm' => 'plugins\\marioletovanec\\posts\\components\\PostForm.php',
+  'MarioLetovanec\\Posts\\Components\\postForm' => 'plugins\\marioletovanec\\posts\\components\\postForm.php',
+  'MarioLetovanec\\Posts\\Components\\Posts' => 'plugins\\marioletovanec\\posts\\components\\Posts.php',
 );
