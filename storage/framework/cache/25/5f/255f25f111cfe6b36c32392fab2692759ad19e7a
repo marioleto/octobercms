@@ -1,0 +1,47 @@
+1607983463a:1:{s:9:"posts.htm";a:12:{s:8:"fileName";s:9:"posts.htm";s:7:"content";s:1038:"title = "Posts"
+url = "/posts"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "all"
+
+[posts]
+
+[builderList]
+modelClass = "MarioLetovanec\Posts\Models\Post"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+{% component 'posts' %}";s:5:"mtime";i:1607982861;s:6:"markup";s:677:"{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+{% component 'posts' %}";s:4:"code";N;s:5:"title";s:5:"Posts";s:3:"url";s:6:"/posts";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"session";a:1:{s:8:"security";s:3:"all";}s:5:"posts";a:0:{}s:11:"builderList";a:8:{s:10:"modelClass";s:32:"MarioLetovanec\Posts\Models\Post";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

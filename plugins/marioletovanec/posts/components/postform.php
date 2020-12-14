@@ -15,9 +15,10 @@ class PostForm extends ComponentBase
 
     public function onSave(){
         
-        $title = Input::get('title');
-        $post->description = Input::get('description');
-        $post->image = Input::get('image');
+        $post = new Post();
+        $post->title = $_POST['title'];
+        $post->description = $_POST['description'];
+        $post->image = $_POST['image'];
         $post->save();
 
     }

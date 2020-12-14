@@ -1,0 +1,45 @@
+1607983205a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:577:"[viewBag]
+==
+<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="https://www.facebook.com/mario.letovanec"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/mario.letovanec"><i class="fa fa-instagram"></i></a>
+				<a href="https://github.com/marioleto"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="#">About me</a>
+
+					<a href="#">posts</a>
+				</p>
+
+				<p>Mario Letovanec &copy; 2020</p>
+			</div>
+
+		</footer>";s:5:"mtime";i:1607822637;s:6:"markup";s:562:"<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="https://www.facebook.com/mario.letovanec"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.instagram.com/mario.letovanec"><i class="fa fa-instagram"></i></a>
+				<a href="https://github.com/marioleto"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a class="link-1" href="#">About me</a>
+
+					<a href="#">posts</a>
+				</p>
+
+				<p>Mario Letovanec &copy; 2020</p>
+			</div>
+
+		</footer>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

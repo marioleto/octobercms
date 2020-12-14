@@ -1,13 +1,13 @@
 <div class="container-fluid">
     <div class="card-deck">
     
-        {% for post in posts %}
+        {% for record in records %}
     
                     <div class="card" style="min-width: 600px; max-width: 600px; margin: auto; margin-bottom: 40px; margin-top: 40px; height: 650px; border-radius: 20px;">
-                      <img class="card-img-top" src="{{ post.image.path }}" alt="Post picture" style="border-radius: 20px 20px 0px 0px; min-width: 600px; max-width: 600px; min-height: 400px; max-hright: 700px;">
+                      <img class="card-img-top" src="{{ record.image.path }}" alt="Post picture" style="border-radius: 20px 20px 0px 0px; min-width: 600px; max-width: 600px; min-height: 400px; max-hright: 700px;">
                       <div class="card-body">
-                        <h5 class="card-title">{{ post.title }}</h5>
-                        <p class="card-text">{{ post.description }}</p>
+                        <h5 class="card-title">{{ record.title }}</h5>
+                        <p class="card-text">{{ record.description }}</p>
                       </div>
                     </div>
                     

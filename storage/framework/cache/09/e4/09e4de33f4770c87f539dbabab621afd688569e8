@@ -1,0 +1,8 @@
+1607982578a:1:{s:12:"add-post.htm";a:10:{s:8:"fileName";s:12:"add-post.htm";s:7:"content";s:123:"title = "Add post"
+url = "/post/add-post"
+layout = "default"
+is_hidden = 0
+
+[postform]
+==
+{% component 'postform' %}";s:5:"mtime";i:1607978649;s:6:"markup";s:26:"{% component 'postform' %}";s:4:"code";N;s:5:"title";s:8:"Add post";s:3:"url";s:14:"/post/add-post";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"postform";a:0:{}}}
