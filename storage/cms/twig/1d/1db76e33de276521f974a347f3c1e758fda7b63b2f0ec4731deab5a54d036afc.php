@@ -29,8 +29,8 @@ class __TwigTemplate_48005454bb3073468e044df63338602952282b93eff401f9ee76849b470
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("styles" => 10, "if" => 17, "partial" => 27, "page" => 32, "framework" => 45, "scripts" => 46);
-        $filters = array("escape" => 5, "theme" => 15);
+        $tags = array("styles" => 10, "if" => 18, "partial" => 30, "page" => 35, "framework" => 48, "scripts" => 49);
+        $filters = array("escape" => 5, "theme" => 16);
         $functions = array();
 
         try {
@@ -85,32 +85,40 @@ class __TwigTemplate_48005454bb3073468e044df63338602952282b93eff401f9ee76849b470
         echo "        <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
         <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://kit.fontawesome.com/2343ce67c6.js\" crossorigin=\"anonymous\"></script>
         <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
         <link href=\"";
-        // line 15
+        // line 16
         echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/home.css"]);
         echo "\" rel=\"stylesheet\">
         <link href=\"";
-        // line 16
+        // line 17
         echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/footer.css"]);
         echo "\" rel=\"stylesheet\">
         ";
-        // line 17
-        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 17), "url", [], "any", false, false, true, 17) == "/login")) {
-            // line 18
+        // line 18
+        if ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, ($context["this"] ?? null), "page", [], "any", false, false, true, 18), "url", [], "any", false, false, true, 18) == "/login")) {
+            // line 19
             echo "        <link href=\"";
             echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/login.css"]);
             echo "\" rel=\"stylesheet\">
         ";
-        } elseif ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 19
-($context["this"] ?? null), "page", [], "any", false, false, true, 19), "url", [], "any", false, false, true, 19) == "/signup")) {
-            // line 20
+        } elseif ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 20
+($context["this"] ?? null), "page", [], "any", false, false, true, 20), "url", [], "any", false, false, true, 20) == "/sign-up")) {
+            // line 21
             echo "        <link href=\"";
             echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/signup.css"]);
             echo "\" rel=\"stylesheet\">
         ";
+        } elseif ((twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source,         // line 22
+($context["this"] ?? null), "page", [], "any", false, false, true, 22), "url", [], "any", false, false, true, 22) == "/posts")) {
+            // line 23
+            echo "        <link href=\"";
+            echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/css/posts.css"]);
+            echo "\" rel=\"stylesheet\">
+        ";
         }
-        // line 21
+        // line 24
         echo " 
     </style>
     </head>
@@ -118,40 +126,40 @@ class __TwigTemplate_48005454bb3073468e044df63338602952282b93eff401f9ee76849b470
         
         <header id=\"layout-header\">
                 ";
-        // line 27
+        // line 30
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("header"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 28
+        // line 31
         echo "        </header>
         <!-- Content -->
         <section id=\"layout-content\">
                 <div> 
                 ";
-        // line 32
+        // line 35
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFunction();
-        // line 33
+        // line 36
         echo "                </div>
         </section>
 
         <!-- Footer -->
         <footer id=\"layout-footer\" class=\"site-footer\">
                 ";
-        // line 38
+        // line 41
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("footer"        , $context['__cms_partial_params']        , true        );
         unset($context['__cms_partial_params']);
-        // line 39
+        // line 42
         echo "        </footer>
 
         <!-- Scripts -->
         <script src=\"";
-        // line 42
+        // line 45
         echo $this->extensions['Cms\Twig\Extension']->themeFilter([0 => "assets/javascript/jquery.js"]);
-        // line 44
+        // line 47
         echo "\"></script>
         ";
-        // line 45
+        // line 48
         $_minify = System\Classes\CombineAssets::instance()->useMinify;
         if ($_minify) {
             echo '<script src="' . Request::getBasePath() . '/modules/system/assets/js/framework.combined-min.js"></script>'.PHP_EOL;
@@ -162,11 +170,11 @@ class __TwigTemplate_48005454bb3073468e044df63338602952282b93eff401f9ee76849b470
         }
         echo '<link rel="stylesheet" property="stylesheet" href="' . Request::getBasePath() .'/modules/system/assets/css/framework.extras'.($_minify ? '-min' : '').'.css">'.PHP_EOL;
         unset($_minify);
-        // line 46
+        // line 49
         echo "        ";
         echo $this->env->getExtension('Cms\Twig\Extension')->assetsFunction('js');
         echo $this->env->getExtension('Cms\Twig\Extension')->displayBlock('scripts');
-        // line 47
+        // line 50
         echo "
     </body>
 </html>";
@@ -184,7 +192,7 @@ class __TwigTemplate_48005454bb3073468e044df63338602952282b93eff401f9ee76849b470
 
     public function getDebugInfo()
     {
-        return array (  170 => 47,  166 => 46,  155 => 45,  152 => 44,  150 => 42,  145 => 39,  141 => 38,  134 => 33,  132 => 32,  126 => 28,  122 => 27,  114 => 21,  108 => 20,  106 => 19,  101 => 18,  99 => 17,  95 => 16,  91 => 15,  85 => 11,  82 => 10,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
+        return array (  178 => 50,  174 => 49,  163 => 48,  160 => 47,  158 => 45,  153 => 42,  149 => 41,  142 => 36,  140 => 35,  134 => 31,  130 => 30,  122 => 24,  116 => 23,  114 => 22,  109 => 21,  107 => 20,  102 => 19,  100 => 18,  96 => 17,  92 => 16,  85 => 11,  82 => 10,  76 => 7,  72 => 6,  68 => 5,  62 => 1,);
     }
 
     public function getSourceContext()
@@ -202,13 +210,16 @@ class __TwigTemplate_48005454bb3073468e044df63338602952282b93eff401f9ee76849b470
         <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">
         <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>
         <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>
+        <script src=\"https://kit.fontawesome.com/2343ce67c6.js\" crossorigin=\"anonymous\"></script>
         <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\" integrity=\"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl\" crossorigin=\"anonymous\"></script>
         <link href=\"{{ ['assets/css/home.css']|theme }}\" rel=\"stylesheet\">
         <link href=\"{{ ['assets/css/footer.css']|theme }}\" rel=\"stylesheet\">
         {% if this.page.url == '/login' %}
         <link href=\"{{ ['assets/css/login.css']|theme }}\" rel=\"stylesheet\">
-        {% elseif this.page.url == '/signup' %}
+        {% elseif this.page.url == '/sign-up' %}
         <link href=\"{{ ['assets/css/signup.css']|theme }}\" rel=\"stylesheet\">
+        {% elseif this.page.url == '/posts' %}
+        <link href=\"{{ ['assets/css/posts.css']|theme }}\" rel=\"stylesheet\">
         {% endif %} 
     </style>
     </head>

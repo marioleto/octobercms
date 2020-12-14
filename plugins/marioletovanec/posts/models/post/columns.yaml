@@ -7,10 +7,5 @@ columns:
     title:
         label: Title
         type: text
+        searchable: true
         sortable: true
-    description:
-        label: Description
-        type: text
-    date:
-        label: Date
-        type: date

@@ -19,3 +19,7 @@ fields:
         size: large
         span: auto
         type: textarea
+    username:
+        label: Username
+        span: auto
+        type: text

@@ -19,7 +19,7 @@ requirePassword = 0
         <div class="col-md-4">
     <div class="login-page" style="margin-top: 15%;">
     <div class="form">
-    <h3 style="margin-bottom: 20px;">Vytvorenie účtu</h3>
+    <h3 style="margin-bottom: 20px;">Create your account</h3>
 
     {{ form_ajax('onRegister') }}
 
@@ -29,7 +29,10 @@ requirePassword = 0
                 type="text"
                 class="form-control"
                 id="registerName"
-                placeholder="Meno" />
+                placeholder="Name"
+                required
+                minlength="4"
+                maxlength="24" />
         </div>
 
         <div class="form-group">
@@ -38,7 +41,10 @@ requirePassword = 0
                 type="email"
                 class="form-control"
                 id="registerEmail"
-                placeholder="Email" />
+                placeholder="Email"
+                required
+                minlength="4"
+                maxlength="32" />
         </div>
 
         {% if loginAttribute == "username" %}
@@ -48,7 +54,10 @@ requirePassword = 0
                     type="text"
                     class="form-control"
                     id="registerUsername"
-                    placeholder="Username" />
+                    placeholder="Username"
+                    required
+                    minlength="4"
+                    maxlength="24" />
             </div>
         {% endif %}
 
@@ -58,10 +67,12 @@ requirePassword = 0
                 type="password"
                 class="form-control"
                 id="registerPassword"
-                placeholder="Heslo" />
+                placeholder="Password"
+                required
+                minlength="6" />
         </div>
 
-        <button type="submit" class="btn btn-success custom-button">Vytvoriť účet</button>
+        <button type="submit" class="btn btn-success custom-button">Sign Up</button>
 
     {{ form_close() }}
         </div>

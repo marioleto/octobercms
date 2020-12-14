@@ -29,13 +29,13 @@ class __TwigTemplate_7e39375b00c4c043f8ef9aa4b12685b95a4ce58ef0cd95240186a7f6821
         $this->blocks = [
         ];
         $this->sandbox = $this->env->getExtension('\Twig\Extension\SandboxExtension');
-        $tags = array("if" => 16);
-        $filters = array("page" => 2);
+        $tags = array();
+        $filters = array("page" => 9);
         $functions = array();
 
         try {
             $this->sandbox->checkSecurity(
-                ['if'],
+                [],
                 ['page'],
                 []
             );
@@ -59,46 +59,29 @@ class __TwigTemplate_7e39375b00c4c043f8ef9aa4b12685b95a4ce58ef0cd95240186a7f6821
     {
         $macros = $this->macros;
         // line 1
-        echo "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
-  <a class=\"navbar-brand header-home\" href=\"";
-        // line 2
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("homepage");
-        echo "\">Home </a>
+        echo "<div class=\"container-fluid\">
+<nav class=\"navbar navbar-expand-lg navbar-light\">
   <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
   </button>
   <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
     <ul class=\"navbar-nav\">
       <li class=\"nav-item\">
-        <a class=\"nav-link\" href=\"";
+        <a class=\"nav-link header-other\" href=\"";
         // line 9
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("about-us");
-        echo "\">To Do List</a>
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("about-me");
+        echo "\">About me</a>
       </li>
       <li class=\"nav-item\">
-        <a class=\"nav-link\" href=\"";
+        <a class=\"nav-link header-other\" href=\"";
         // line 12
-        echo $this->extensions['Cms\Twig\Extension']->pageFilter("help");
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("posts");
         echo "\">Posts</a>
       </li>
     </ul>
   </div>
-    ";
-        // line 16
-        if (($context["user"] ?? null)) {
-            // line 17
-            echo "        <input type=\"button\" style=\"margin-right: 5%; font-size: 18px;\"class=\"btn btn-outline-danger\" data-request=\"onLogout\" data-request-data=\"redirect: '/'\" value=\"Log out\"/>
-    ";
-        } else {
-            // line 19
-            echo "        <input type=\"button\" style=\"margin-right: 5%; font-size: 18px;\"class=\"btn btn-outline-success\" onclick=\"location.href='";
-            echo $this->extensions['Cms\Twig\Extension']->pageFilter("log");
-            echo "';\" value=\"Log in\"/>
-    ";
-        }
-        // line 20
-        echo " 
-</nav>";
+</nav>
+</div>";
     }
 
     public function getTemplateName()
@@ -113,31 +96,27 @@ class __TwigTemplate_7e39375b00c4c043f8ef9aa4b12685b95a4ce58ef0cd95240186a7f6821
 
     public function getDebugInfo()
     {
-        return array (  100 => 20,  94 => 19,  90 => 17,  88 => 16,  81 => 12,  75 => 9,  65 => 2,  62 => 1,);
+        return array (  78 => 12,  72 => 9,  62 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
-  <a class=\"navbar-brand header-home\" href=\"{{ 'homepage'|page }}\">Home </a>
+        return new Source("<div class=\"container-fluid\">
+<nav class=\"navbar navbar-expand-lg navbar-light\">
   <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNavDropdown\" aria-controls=\"navbarNavDropdown\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
     <span class=\"navbar-toggler-icon\"></span>
   </button>
   <div class=\"collapse navbar-collapse\" id=\"navbarNavDropdown\">
     <ul class=\"navbar-nav\">
       <li class=\"nav-item\">
-        <a class=\"nav-link\" href=\"{{ 'about-us'|page }}\">To Do List</a>
+        <a class=\"nav-link header-other\" href=\"{{ 'about-me'|page }}\">About me</a>
       </li>
       <li class=\"nav-item\">
-        <a class=\"nav-link\" href=\"{{ 'help'|page }}\">Posts</a>
+        <a class=\"nav-link header-other\" href=\"{{ 'posts'|page }}\">Posts</a>
       </li>
     </ul>
   </div>
-    {% if user %}
-        <input type=\"button\" style=\"margin-right: 5%; font-size: 18px;\"class=\"btn btn-outline-danger\" data-request=\"onLogout\" data-request-data=\"redirect: '/'\" value=\"Log out\"/>
-    {% else %}
-        <input type=\"button\" style=\"margin-right: 5%; font-size: 18px;\"class=\"btn btn-outline-success\" onclick=\"location.href='{{ 'log'|page }}';\" value=\"Log in\"/>
-    {% endif %} 
-</nav>", "C:\\xampp\\htdocs\\octobercms/themes/rainlab-vanilla/partials/header.htm", "");
+</nav>
+</div>", "C:\\xampp\\htdocs\\octobercms/themes/rainlab-vanilla/partials/header.htm", "");
     }
 }

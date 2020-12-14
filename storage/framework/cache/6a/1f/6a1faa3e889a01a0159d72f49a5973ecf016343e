@@ -1,4 +1,4 @@
-1607677060a:1:{s:8:"sign.htm";a:11:{s:8:"fileName";s:8:"sign.htm";s:7:"content";s:1926:"title = "Sign up"
+1607896447a:1:{s:8:"sign.htm";a:11:{s:8:"fileName";s:8:"sign.htm";s:7:"content";s:2258:"title = "Sign up"
 url = "/sign-up"
 layout = "default"
 is_hidden = 0
@@ -19,7 +19,7 @@ requirePassword = 0
         <div class="col-md-4">
     <div class="login-page" style="margin-top: 15%;">
     <div class="form">
-    <h3 style="margin-bottom: 20px;">Vytvorenie účtu</h3>
+    <h3 style="margin-bottom: 20px;">Create your account</h3>
 
     {{ form_ajax('onRegister') }}
 
@@ -29,7 +29,10 @@ requirePassword = 0
                 type="text"
                 class="form-control"
                 id="registerName"
-                placeholder="Meno" />
+                placeholder="Name"
+                required
+                minlength="4"
+                maxlength="24" />
         </div>
 
         <div class="form-group">
@@ -38,7 +41,10 @@ requirePassword = 0
                 type="email"
                 class="form-control"
                 id="registerEmail"
-                placeholder="Email" />
+                placeholder="Email"
+                required
+                minlength="4"
+                maxlength="32" />
         </div>
 
         {% if loginAttribute == "username" %}
@@ -48,7 +54,10 @@ requirePassword = 0
                     type="text"
                     class="form-control"
                     id="registerUsername"
-                    placeholder="Username" />
+                    placeholder="Username"
+                    required
+                    minlength="4"
+                    maxlength="24" />
             </div>
         {% endif %}
 
@@ -58,10 +67,12 @@ requirePassword = 0
                 type="password"
                 class="form-control"
                 id="registerPassword"
-                placeholder="Heslo" />
+                placeholder="Password"
+                required
+                minlength="6" />
         </div>
 
-        <button type="submit" class="btn btn-success custom-button">Vytvoriť účet</button>
+        <button type="submit" class="btn btn-success custom-button">Sign Up</button>
 
     {{ form_close() }}
         </div>
@@ -71,13 +82,13 @@ requirePassword = 0
         </div>
 {% else %}
     <!-- Registration is disabled. -->
-{% endif %}";s:5:"mtime";i:1607587303;s:6:"markup";s:1702:"{% if canRegister %}
+{% endif %}";s:5:"mtime";i:1607683018;s:6:"markup";s:2034:"{% if canRegister %}
     <div class="row" style="max-width: 100%;">
         <div class="col-md-4"></div>
         <div class="col-md-4">
     <div class="login-page" style="margin-top: 15%;">
     <div class="form">
-    <h3 style="margin-bottom: 20px;">Vytvorenie účtu</h3>
+    <h3 style="margin-bottom: 20px;">Create your account</h3>
 
     {{ form_ajax('onRegister') }}
 
@@ -87,7 +98,10 @@ requirePassword = 0
                 type="text"
                 class="form-control"
                 id="registerName"
-                placeholder="Meno" />
+                placeholder="Name"
+                required
+                minlength="4"
+                maxlength="24" />
         </div>
 
         <div class="form-group">
@@ -96,7 +110,10 @@ requirePassword = 0
                 type="email"
                 class="form-control"
                 id="registerEmail"
-                placeholder="Email" />
+                placeholder="Email"
+                required
+                minlength="4"
+                maxlength="32" />
         </div>
 
         {% if loginAttribute == "username" %}
@@ -106,7 +123,10 @@ requirePassword = 0
                     type="text"
                     class="form-control"
                     id="registerUsername"
-                    placeholder="Username" />
+                    placeholder="Username"
+                    required
+                    minlength="4"
+                    maxlength="24" />
             </div>
         {% endif %}
 
@@ -116,10 +136,12 @@ requirePassword = 0
                 type="password"
                 class="form-control"
                 id="registerPassword"
-                placeholder="Heslo" />
+                placeholder="Password"
+                required
+                minlength="6" />
         </div>
 
-        <button type="submit" class="btn btn-success custom-button">Vytvoriť účet</button>
+        <button type="submit" class="btn btn-success custom-button">Sign Up</button>
 
     {{ form_close() }}
         </div>
